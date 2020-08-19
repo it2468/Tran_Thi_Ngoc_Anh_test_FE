@@ -14,6 +14,7 @@ body {
     width: 100%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
 }
@@ -182,6 +183,11 @@ body {
     margin-top: 50px;
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
+    transition: .3s;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .block1 .btn {
@@ -217,35 +223,5 @@ body {
 .block-item {
     padding-left: 10px;
     padding-right: 10px;
-}
-
-@media(max-width: 768px) {
-    .container {
-        width: 100%;
-        max-width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .block .wrap-title .title {
-        font-size: 2rem;
-    }
-    .wrap-price {
-        transform: translate(-50%, -50%) scale(0.8);
-    }
-    .new-active {
-        transform: scale(0.8);
-    }
-    .block-item {
-        margin-bottom: 110px;
-    }
-}
-
-@media(max-width: 576px) {
-    .wrapper-block>.block-item {
-        margin-bottom: 65px;
-    }
-    .block {
-        max-width: 362px;
-        margin: 0 auto;
-    }
+    margin-bottom: 125px;
 }
